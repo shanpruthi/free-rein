@@ -1,0 +1,172 @@
+* { margin:0; padding:0; font-family: Baskerville, serif;}
+
+#homeheader 
+{
+	height: 100%;
+	background-color: #FCFBF5;
+	background-size: 100%;
+  font-size: 25pt;
+  font-family: Baskerville, serif;
+  vertical-align: baseline;
+  text-align: right;
+  padding: 10 20 0 0;
+}
+
+.pushmenu 
+{ /*nav*/
+  background: #FFE4C4;
+  color: white;
+  font-family: serif;
+  width: 240px;
+  height: 100%;
+  top: 0;
+  z-index: 1000;
+  position:fixed;
+}
+
+.pushmenu a {
+  display: block; /* drops the nav vertically*/
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+  /*border-top: 1px solid #56544e;
+  border-bottom: 1px solid #312e2a;*/
+  padding: 14px;
+}
+
+.pushmenu a:hover {
+  background:white;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+.pushmenu a:active {
+  background: #454f5c;
+  color: #fff;
+}
+
+.pushmenu-left {
+  left: -240px;
+
+}
+
+.pushmenu-left.pushmenu-open {
+  left: 0;
+}
+
+.pushmenu-push {
+  overflow-x: hidden;
+  position: relative;
+  left: 0;
+}
+
+.pushmenu-push-toright {
+  left: 240px;
+}
+
+/*Transition*/
+.pushmenu, .pushmenu-push {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;  
+}
+
+#nav_list {
+  background: url("../images/wow2.gif") no-repeat left top;
+  cursor: pointer;
+  height: 27px;
+  width: 33px;
+  text-indent: -99999em;
+}
+
+nav-list.active {
+  background-position: -33px top;
+}
+
+ .buttonset {
+      background: #FFE4C4;
+      height: 16px;
+      padding: 10px 20px 20px;
+ }
+ 
+ section.content {
+   font-family: Arial, Helvetica, sans-serif;
+   padding: 10px 20px;
+ }
+
+#footer
+{
+	font-size: 12pt;
+	border-top: medium double grey;
+	line-height: 50px;
+	background-color: #FCFBF5;
+	text-align: center;
+	color: grey;
+	position:absolute;
+  bottom:0;
+  width:100%;
+  height:60px;
+}
+
+#productsheader
+{
+  height: 100%;
+  background-color: #FCFBF5;
+  background-size: 100%;
+}
+
+#item1
+{
+  float: left;
+  height: 250px;
+  width: 250px;
+  position: relative;
+  text-align: center;
+  line-height: 250px;
+  margin: 200 50 100 160;
+  background-image: url("../images/placehold.png");
+}
+
+#item2
+{
+  float: left;
+  height: 250px;
+  width: 250px;
+  text-align: center;
+  margin: 200 50 100 50;
+  line-height: 250px;
+  background-image: url("../images/placehold.png");
+
+}
+
+#item3
+{
+  float: left;
+  height: 250px;
+  width: 250px;
+  text-align: center;
+  margin: 200 100 100 50;
+  line-height: 250px;
+  background-image: url("../images/placehold.png");
+}
+
+#aboutheader
+{
+  height: 100%;
+  background-color: #FCFBF5;
+  background-size: 100%;
+}
+
+#about
+{
+  text-align: center;
+  line-height: 200px;
+  margin: auto;
+  margin-top: -100px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
