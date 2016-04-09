@@ -1,11 +1,12 @@
 <html> 
 
+{% load staticfiles %}
 <head> 
 	<meta charset = "UTF-8">
-	<link rel = "stylesheet" href = "css/tiny.css"/>
-	<link rel= "shortcut icon" href= "images/carousel.png">
+	<link rel = "stylesheet" href = "{% static 'tinycarousel/css/tiny.css' %}"/>
+	<link rel= "shortcut icon" href= "{% static 'tinycarousel/images/carousel.png' %}">
 	<title> </title>
-	<script type = "text/javascript" src = "jquery.js"></script>
+	<script type = "text/javascript" src = "{% static 'tinycarousel/jquery.js' %}"></script>
 </head>
 
 <!-- ==================== PUSH MENU ==================== -->
@@ -14,8 +15,8 @@
   <nav class="pushmenu pushmenu-left">
     </br></br></br></br></br>
     <a href="#">circus</a>
-    <a href="products.html">shit</a>
-    <a href="about.html">about</a>
+    <a href="/products">shit</a>
+    <a href="/about">about</a>
   </nav>
   
 	<div class="container">
