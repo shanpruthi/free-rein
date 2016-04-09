@@ -19,4 +19,6 @@ from django.contrib import admin
 urlpatterns = [
     url(r'', include('tinycarousel.urls')),
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^bout/', include('tinycarousel.urls')),
+    url(r'^shit/', include('tinycarousel.urls')),
 ]
