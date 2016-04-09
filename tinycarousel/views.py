@@ -9,13 +9,13 @@ def index(request):
 	template = loader.get_template('tinycarousel/index.html')
 	return HttpResponse(template.render(request))
 
-def bout(request):
-	template = loader.get_template('tinycarousel/bout.html')
+def about(request):
+	template = loader.get_template('tinycarousel/about.html')
 	return HttpResponse(template.render(request))
 
-def shit(request):
+def products(request):
 	product_list = Products.objects.order_by('-title')
-	template = loader.get_template('tinycarousel/shit.html')
+	template = loader.get_template('tinycarousel/products.html')
 	context = {
 		'product_list': product_list,
 	}
